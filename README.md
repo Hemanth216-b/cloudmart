@@ -260,10 +260,10 @@ OPENAI_ASSISTANT_ID=<your-openai-assistant-id>
 ```
 ​
 Create Dockerfile:
-```
-nano Dockerfile
-​```
+
+```nano Dockerfile```
 Content of Dockerfile:
+
 ```
 FROM node:18
 WORKDIR /usr/src/app
@@ -282,12 +282,14 @@ cd ..
 mkdir frontend && cd frontend
 wget https://tcb-public-events.s3.amazonaws.com/mdac/resources/day2/cloudmart-frontend.zip
 unzip cloudmart-frontend.zip
-​```
-Create Dockerfile:
 ```
-nano Dockerfile
+Create Dockerfile:
+
+```nano Dockerfile```
+
 ​
 Content of Dockerfile:
+```
 FROM node:16-alpine as build
 WORKDIR /app
 COPY package*.json ./
@@ -308,8 +310,11 @@ CMD ["serve", "-s", ".", "-l", "5001"]
 
 ​
 Part 2 - Kubernetes
+```
 Attention: AWS Kubernetes service is not free, so when executing the hands-on below, you will be charged a few cents on your AWS account according to EKS pricing on AWS.
 Remember to delete the cluster to avoid unwanted charges. Use the removal section at the end of the doc.
+```
+
 Cluster Setup on AWS Elastic Kubernetes Services (EKS)
 Create a user named eksuser with Admin privileges and authenticate with it
 aws configure
@@ -364,16 +369,20 @@ eksctl create iamserviceaccount \
   --approve
 ​```
 
-NOTE: In the example above, Admin privileges were used to facilitate educational purposes. Always remember to follow the principle of least privilege in production environments
+```NOTE: In the example above, Admin privileges were used to facilitate educational purposes. Always remember to follow the principle of least privilege in production environments
+```
 Backend Deployment on Kubernetes
 Create an ECR Repository for the Backend and upload the Docker image to it
+```
 Repository name: cloudmart-backend
+```
+
 ​
 Switch to backend folder
 ```
 cd ../..
 cd challenge-day2/backend
-​```
+```
 Follow the ECR steps to build your Docker image
 
 Create a Kubernetes deployment file (YAML) for the Backend
@@ -383,7 +392,7 @@ cd ../..
 cd challenge-day2/backend
 nano cloudmart-backend.yaml
 ​```
-```
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -429,12 +438,15 @@ spec:
     - protocol: TCP
       port: 5000
       targetPort: 5000
-​```
+      
+      
+```
+
 
 Deploy the Backend on Kubernetes
 ```
 kubectl apply -f cloudmart-backend.yaml
-​```
+```
 
 Monitor the status of objects being created and obtain the public IP generated for the API
 ```
@@ -446,28 +458,30 @@ kubectl get service
 Frontend Deployment on Kubernetes
 Preparation
 Change the Frontend's .env file to point to the API URL created within Kubernetes obtained by the kubectl get service command
-```
-cd ../challenge-day2/frontend
+
+```cd ../challenge-day2/frontend
 nano .env
-```
+
+
 ​
+```
 Content of .env:
+
 ```
 VITE_API_BASE_URL=http://<your_url_kubernetes_api>:5000/api
 ```
 ​
 Create an ECR Repository for the Frontend and upload the Docker image to it
 ```
-Repository name: cloudmart-frontend
-​```
+Repository name: cloudmart-frontend​```
+
 
 Follow the ECR steps to build your Docker image
+
 Create a Kubernetes deployment file (YAML) for the Frontend
-```
-nano cloudmart-frontend.yaml
-```
-​
-apiVersion: apps/v1
+```nano cloudmart-frontend.yaml```
+
+​```apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: cloudmart-frontend-app
@@ -501,9 +515,8 @@ spec:
       targetPort: 5001
 ​```
 Deploy the Frontend on Kubernetes
-```
 kubectl apply -f cloudmart-frontend.yaml
-```
+``
 ​
 Monitor the status of objects being created and obtain the public IP generated for the API
 ````
