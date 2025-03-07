@@ -4,7 +4,7 @@
 # MultiCloud, DevOps & AI Challenge Creating the E-commerse application called cloudmart
 ## Step 1: Use Claude to Generate Terraform Code
 
-1. Start a conversation with Claude.
+1. Start a conversation with [Claude](https://claude.ai/).
 2. Ask Claude to create Terraform code for an S3 bucket. Use a prompt like:
 "Please provide Terraform code to create an S3 bucket in AWS with a unique name."
 3. Claude should generate code similar to this:
