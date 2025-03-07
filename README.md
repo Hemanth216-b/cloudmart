@@ -986,8 +986,7 @@ Follow these steps to create an OpenAI assistant for CloudMart:
 1. Access the OpenAI platform (https://platform.openai.com/).
 2. Log in or create an account if you don't have one yet.
 
-<aside>
-🔇
+![image](https://github.com/user-attachments/assets/df5ac82a-437e-4484-82bf-6eb99d135c79)
 
 Note: You will need to add at least $5.00 credit for the API to work. Follow the steps below:
 
