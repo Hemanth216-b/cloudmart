@@ -1,7 +1,7 @@
 
 ![Screenshot 2025-03-04 120607](https://github.com/user-attachments/assets/6b2005b8-8093-43d9-8eac-effc012fcd73)
 
-# MultiCloud, DevOps & AI Challenge Creating the cloudmart
+# MultiCloud, DevOps & AI Challenge Creating the E-commerse application called cloudmart
 ## Step 1: Use Claude to Generate Terraform Code
 
 1. Start a conversation with Claude.
