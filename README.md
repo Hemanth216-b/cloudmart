@@ -1,10 +1,7 @@
-# cloudmart
-# MultiCloud, DevOps & AI Challenge
 
+![Screenshot 2025-03-04 120607](https://github.com/user-attachments/assets/6b2005b8-8093-43d9-8eac-effc012fcd73)
 
-
-# Streamlined Guide: Using Claude as AI Assistant to Terraform
-
+# MultiCloud, DevOps & AI Challenge Creating the cloudmart
 ## Step 1: Use Claude to Generate Terraform Code
 
 1. Start a conversation with Claude.
