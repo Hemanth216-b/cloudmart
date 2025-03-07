@@ -215,6 +215,7 @@ Congratulations! You've successfully used Claude to generate Terraform code, set
 
 
 MultiCloud, DevOps & AI Challenge - Day 2 - Deploying Docker Images for an E-commerce Website with Kubernetes
+MultiCloud, DevOps & AI Challenge - Day 2 - Experienced
 Part 1 - Docker
 Step 1: Install Docker on EC2
 Execute the following commands:
@@ -467,6 +468,7 @@ kubectl delete service cloudmart-frontend-app-service
 kubectl delete deployment cloudmart-frontend-app
 kubectl delete service cloudmart-backend-app-service
 kubectl delete deployment cloudmart-backend-app
+
 eksctl delete cluster --name cloudmart --region us-east-1
 ![Screenshot 2025-03-05 150518](https://github.com/user-attachments/assets/8c410cc8-ec1b-4638-a082-a4fc9d85acd3)
 
