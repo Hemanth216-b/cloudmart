@@ -215,7 +215,8 @@ Congratulations! You've successfully used Claude to generate Terraform code, set
 
 
 MultiCloud, DevOps & AI Challenge - Day 2 - Deploying Docker Images for an E-commerce Website with Kubernetes
-MultiCloud, DevOps & AI Challenge - Day 2 - Experienced
+
+
 Part 1 - Docker
 Step 1: Install Docker on EC2
 Execute the following commands:
