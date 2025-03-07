@@ -784,14 +784,8 @@ Follow these steps to manually create the Bedrock Agent for CloudMart:
 
 ## Model Access:
 
-<aside>
-🔇
 
-Note: The video below has no audio and serves only as a reference for the step-by-step process.
-
-</aside>
-
-[Screenshare - 2024-09-19 4_29_23 PM.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d1b678b-cd91-4256-93c7-73b2e82396d5/e7b46d1e-7560-42ff-ad54-d052df77a966/Screenshare_-_2024-09-19_4_29_23_PM.mp4)
+https://file.notion.so/f/f/0d1b678b-cd91-4256-93c7-73b2e82396d5/e7b46d1e-7560-42ff-ad54-d052df77a966/Screenshare_-_2024-09-19_4_29_23_PM.mp4?table=block&id=fffe8a56-670c-8141-8ba9-d4e0a0acb46d&spaceId=0d1b678b-cd91-4256-93c7-73b2e82396d5&expirationTimestamp=1741334400000&signature=rDJj8DmGZJOs5saN7Zv0-_1sJGKemu2nGN7nAGw4xiM
 
 1. In the Amazon Bedrock console, go to "Model access" in the navigation panel.
 2. Choose "Enable specific models".
@@ -990,9 +984,6 @@ Follow these steps to create an OpenAI assistant for CloudMart:
 
 Note: You will need to add at least $5.00 credit for the API to work. Follow the steps below:
 
-</aside>
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/0d1b678b-cd91-4256-93c7-73b2e82396d5/b9f211d9-1a7f-4b49-b550-c02b486845d1/image.png)
 
 ## Create the Assistant:
 
